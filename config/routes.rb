@@ -1,4 +1,4 @@
-SampeApp::Application.routes.draw do
+Sampleapp::Application.routes.draw do
   get "pages/home"
 
   get "pages/contact"
