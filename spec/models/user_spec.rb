@@ -104,7 +104,7 @@ describe User do
     end
     
     it "should have an ecrypted password attribute" do
-      @user.should respond_to(:enrypted_password)
+      @user.should respond_to(:encrypted_password)
     end
     
     it "should set the encrypted password" do
@@ -117,7 +117,7 @@ describe User do
       end
       
       it "should be false if the passwords don't match" do
-        @user.has_passwords?("invalid").should be_false
+        @user.has_password?("invalid").should be_false
       end
     end
     
