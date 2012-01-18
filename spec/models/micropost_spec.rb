@@ -22,7 +22,7 @@ describe Micropost do
     end
 
     it "should have the right associated user" do
-      @micropost.user_id.should == @user.user_id
+      @micropost.user_id.should == @user.id
       @micropost.user.should == @user
     end
   end
